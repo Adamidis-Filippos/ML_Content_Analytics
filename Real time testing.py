@@ -6,14 +6,14 @@ from tkinter import messagebox
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load the trained GPT-2 model and tokenizer
-gpt2_model_directory = "C:/Users/santo/Desktop/AUEB/ML Content Analytics/GPT2"
+gpt2_model_directory = "GPT2"
 gpt2_tokenizer = GPT2Tokenizer.from_pretrained(gpt2_model_directory)
 gpt2_model = GPT2ForSequenceClassification.from_pretrained(gpt2_model_directory)
 gpt2_model.to(device)
 gpt2_model.eval()
 
 # Load the trained DistilBERT model and tokenizer
-distilbert_model_directory = "C:/Users/santo/Desktop/AUEB/ML Content Analytics/DistilBERT"
+distilbert_model_directory = "DistilBERT"
 distilbert_tokenizer = DistilBertTokenizer.from_pretrained(distilbert_model_directory)
 distilbert_model = DistilBertForSequenceClassification.from_pretrained(distilbert_model_directory)
 distilbert_model.to(device)
