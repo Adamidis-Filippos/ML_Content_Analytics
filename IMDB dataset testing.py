@@ -3,9 +3,9 @@ import torch
 from transformers import GPT2Tokenizer, GPT2ForSequenceClassification, DistilBertTokenizer, DistilBertForSequenceClassification
 
 # Define the paths
-imdb_dataset_path = "C:/Users/santo/Desktop/AUEB/ML Content Analytics/Update_07.08/Scraping and testing/imdb_movie_reviews.csv"
-gpt2_model_directory = "C:/Users/santo/Desktop/AUEB/ML Content Analytics/Update_07.08/GPT2"
-distilbert_model_directory = "C:/Users/santo/Desktop/AUEB/ML Content Analytics/Update_07.08/DistilBERT"
+imdb_dataset_path = "Scraping and testing/imdb_movie_reviews.csv"
+gpt2_model_directory = "GPT2"
+distilbert_model_directory = "DistilBERT"
 
 # Load the dataset
 print("Loading the dataset...")
